@@ -21,7 +21,7 @@
     border-radius: 80px;
 }
 .nav-list {
-    width: 50%;
+    width: 65%;
     text-align: center;
     display: flex;
 
@@ -40,7 +40,7 @@
 }
 .rightNav{
     padding: 12px 80px;
-    width: 50%;
+    width: 35%;
     text-align: right;
 }
 #search{
@@ -50,7 +50,7 @@
     border-radius: 9px;
 }
 .background{
-    background: rgba(0, 0, 0,0.7) url(/images/back.jpg);
+    background: rgba(0, 0, 0,0.7) url(../images/back.jpg);
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -127,7 +127,7 @@
     margin: auto auto auto auto;
     padding-bottom: 10px;
     padding-top: 10px;
-    padding-left: 604px;
+    text-align: center;
 }
 .pp{
     padding: 0px 83px;
@@ -159,7 +159,7 @@
 }
 .contact{
     background-color: #eef1f2;
-    height: 400px;
+    height: 630px;
 }
 .contact-us{
     text-align: center;
@@ -169,8 +169,10 @@
 
 }
 .contactbox{
-    max-width: 344px;
+    max-width: 885px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .contactbox input{
     max-width: 100%;
@@ -180,4 +182,73 @@
     border-radius: 5px;
     font-size: 17px;
     padding-right: 63px;
+}
+.contactbox textarea{
+    max-width: 100%;
+    padding: 1px 3px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-right: 63px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+@media only screen and (max-width:1206px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    align-items: center;
+    transition: all 0.7s ease-out;
+    height: 600px;
+    }
+    .logo{
+       justify-content: normal;
+        position: absolute;
+        left: 24px;
+        top: 3%;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .visible{
+        opacity: 0;
+    }
+    .firstSection{
+        height: 180vh;
+    }
+    .box-main{
+        max-width: 92%;
+        flex-direction: column;
+        padding: 0%;
+    }
+    .thirdSection{
+        height: 620px;
+    }
+    .secondSection,.fourthSection{
+        height: 620px;
+    }
 }

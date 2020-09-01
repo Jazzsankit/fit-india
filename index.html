@@ -9,17 +9,22 @@
 </head>
 
 <body>
-    <nav class="navbar background">
-        <ul class="nav-list">
-            <div class="logo"><img src="/images/fit.jpg" alt="logo"></div>
-            <li><a href="#home">Home</a></li>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list visible">
+            <div class="logo"><img src="images/fit.jpg" alt="logo"></div>
+            <li><a href="#home" onclick="return home()">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact us</a></li>
         </ul>
-        <div class="rightNav">
+        <div class="rightNav visible">
             <input type="text" name="search" id="search">
             <button class="btn">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
     <section class="background firstSection">
@@ -37,7 +42,7 @@
                     their own health and well-being as well as for the health and well-being of fellow Indians. </p>
             </div>
             <div class="secondhalf">
-                <img src="/images/unnamed.png" alt="ncc">
+                <img src="images/unnamed.png" alt="ncc">
                 <div class="buttons">
                     <button class="btn">Subscribe</button>
                     <button class="btn">Watch Videos</button>
@@ -123,6 +128,7 @@
             <input type="text" class="search" id="yo" placeholder="Enter your name">
             <input type="email" class="search" id="yo" placeholder="Enter your email">
             <input type="number" class="search" id="yo" placeholder="Enter your phone">
+            <textarea name="hjs" id="" cols="30" rows="10"placeholder="Ellaborate"></textarea>
             <button class="btn-dark">Submit</button>
         </div>
         <br>
@@ -134,7 +140,7 @@
             <p class="pp">© 2020 Ankit.</p>
         </div>
     </footer>
-
+    <script src="js/resp.js"></script>
 </body>
 
 </html>
