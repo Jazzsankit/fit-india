@@ -247,8 +247,10 @@
     }
     .thirdSection{
         height: 850px;
+        flex-direction: column;
     }
     .secondSection,.fourthSection{
         height: 1000px;
+        flex-direction: column;
     }
 }
